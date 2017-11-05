@@ -91,3 +91,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 #Especificar versão do ruby
+ruby "2.4.1"
