@@ -17,7 +17,7 @@
         <tr style="background: <%= cycle('white','#f0f0f5');%>">
           <td><%= kind.description %></td>
           <td><%= link_to t('buttons.edit'), edit_kind_path(kind) %></td>
-          <td><%= link_to t('buttons.destroy'), kind, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= link_to t('buttons.destroy'), kind, method: :delete, data: { confirm: t('message.confirm') } %></td>
         </tr>
       <% end %>
     </tbody>

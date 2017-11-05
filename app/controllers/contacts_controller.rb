@@ -63,7 +63,7 @@ class ContactsController < ApplicationController
   def destroy
     @contact.destroy
     respond_to do |format|
-      format.html { redirect_to contacts_path, notice: I18n.t('message.destroyed') }
+      format.html { redirect_to contacts_url, notice: I18n.t('message.destroyed') }
       format.json { head :no_content }
     end
   end
