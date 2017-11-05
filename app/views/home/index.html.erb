@@ -1,0 +1,27 @@
+
+  <p>Bem-vindo ao sistema de agenda de contatos!</p>
+
+  <!--
+  <%= mostrar_meu_nome %><br/>
+  Resultado da soma é: <%= somar_dois(5) %><br/>
+  <%= mostrar_hora %>
+  <h2>
+    <%= t 'hello.friend' %><br>
+    <%= t 'hi' %>
+    <%= l Date.today %>
+  </h2>
+  -->
+
+  <ul>
+    <li>
+      <span class="glyphicon glyphicon-phone-alt" aria-hidden="true">-</span>
+      <%= link_to "Tipos", kinds_path %>
+   </li>
+    <li>
+      <span class="glyphicon glyphicon-th-list" aria-hidden="true">-</span>
+      <%= link_to "Contatos", contacts_path %>
+    </li>
+    <!--
+    <li><%= link_to "Teste AJAX", phones_path, remote: true %></li>
+    !-->
+  </ul>
